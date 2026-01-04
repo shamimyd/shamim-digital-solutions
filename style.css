@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;  /* متن بزرگ‌تر */
+  font-size: 18px;
   line-height: 1.6;
   background: #f4f6f8;
   color: #333;
-  direction: ltr; /* انگلیسی */
+  direction: ltr;
 }
 
 /* ---------------- Header / Navbar ---------------- */
@@ -22,20 +22,17 @@ body {
   top: 0;
   z-index: 100;
 }
-
 .navbar h2 {
-  font-size: 2em; /* بزرگ‌تر */
+  font-size: 2em;
   margin: 0;
 }
-
 .navbar a {
   color: white;
   text-decoration: none;
   margin-left: 20px;
-  font-size: 1.2em; /* بزرگ‌تر */
+  font-size: 1.2em;
   transition: color 0.3s;
 }
-
 .navbar a:hover {
   color: #ffd700;
 }
@@ -44,17 +41,16 @@ body {
 .hero {
   background: linear-gradient(135deg, #0a2540, #1b3b6f);
   color: white;
-  padding: 120px 40px;
+  padding: 140px 40px;
   text-align: center;
 }
-
 .hero h1 {
-  font-size: 4em; /* خیلی بزرگ */
+  font-size: 4.5em;
   margin-bottom: 20px;
 }
-
 .hero p {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  margin-bottom: 40px;
 }
 
 /* ---------------- Features Section ---------------- */
@@ -64,7 +60,6 @@ body {
   gap: 40px;
   padding: 60px 20px;
 }
-
 .features .card {
   background: white;
   padding: 35px;
@@ -77,28 +72,25 @@ body {
 /* ---------------- Grid / Cards ---------------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  padding: 60px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 80px 40px;
 }
-
 .card {
   background: white;
-  padding: 35px;
+  padding: 40px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
-
 .card img {
-  width: 160px; /* بزرگ‌تر */
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   margin-bottom: 15px;
   object-fit: cover;
@@ -114,32 +106,29 @@ body {
 
 /* ---------------- Contact Form ---------------- */
 .contact-form {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-
 .contact-form input,
 .contact-form textarea {
   margin: 15px 0;
-  padding: 15px;
-  font-size: 1.1em;
+  padding: 18px;
+  font-size: 1.2em;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
-
 .contact-form button {
   background: #0a2540;
   color: white;
-  padding: 15px;
-  font-size: 1.2em;
+  padding: 18px;
+  font-size: 1.3em;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
 }
-
 .contact-form button:hover {
   background: #1b3b6f;
 }
@@ -154,30 +143,40 @@ footer {
   font-size: 1em;
 }
 
+/* ---------------- Back Button ---------------- */
+.back-button {
+  text-align: center;
+  margin: 30px 0;
+}
+.back-button a {
+  text-decoration: none;
+  background: #0a2540;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background 0.3s;
+}
+.back-button a:hover {
+  background: #1b3b6f;
+}
+
 /* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 3em;
   }
-
   .hero p {
     font-size: 1.3em;
   }
-
   .navbar {
     flex-direction: column;
     text-align: center;
   }
-
   .navbar a {
     display: block;
     margin: 10px 0;
   }
-
-  .grid {
-    padding: 40px 20px;
-  }
-
   .features {
     flex-direction: column;
     gap: 30px;
